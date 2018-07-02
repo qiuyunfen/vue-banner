@@ -1,7 +1,7 @@
 <template>
     <swiper :options="swiperOption">
         <swiper-slide>
-            <swiper-content img-src="1.jpg" content="截止日期2018.07.02" status="end" class="swiper-slide"></swiper-content>
+            <swiper-content img-src="1.jpg" content="截止日期2018.07.02" status="" class="swiper-slide"></swiper-content>
         </swiper-slide>
         <swiper-slide>
             <swiper-content img-src="2.jpg" content="截止日期2018.07.02" status="process" class="swiper-slide"></swiper-content>
@@ -28,11 +28,12 @@ export default {
         return {
             swiperOption: {
                 centeredSlides: true,
-                // autoplay: {
-                //     delay: 3000,
-                //     disableOnInteraction: false
-                // },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false
+                },
                 slidesPerView: 1.09,
+                loopedSlides: 9999,
                 spaceBetween: 10,
                 loop : true
             }

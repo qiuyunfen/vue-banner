@@ -42,12 +42,13 @@
     border-radius: 4px;
 }
 .activity-img {
+    display: block;
     width:100%;
     height: 100%;
 }
 .activity-footer {
     position: absolute;
-    bottom: 3px;
+    bottom: 0;
     right: 0;
     width: 246px;
     height: 18px;
@@ -61,6 +62,7 @@
         font-size: 12px;
         line-height: 12px;
         color: #ffffff;
+        letter-spacing: normal;
     }
     .activity-end-footer {
         width: 100%;
