@@ -1,11 +1,11 @@
 <template>
 
     <div class="activuty-box swiper-slide">
-        <a href="http://www.baidu.com">
-            <img :src="require('../imgs/'+imgSrc)" class="activity-img"/>
-        </a>
-
-        <div class="activity-footer">
+        <img :src="require('../imgs/'+imgSrc)" class="activity-img"/>
+        <div v-if="isEnd" class="activity-end-footer">
+            <img src="../imgs/page-1@2x.png" class="activity-end-picture"/>
+        </div>
+        <div class="activity-footer" v-else>
             <p class="end-time-box">{{content}}</p>
         </div>
 
@@ -22,6 +22,15 @@
             content: {
                 type: String,
                 required: true
+            },
+            status: {
+                type: String,
+                required: true
+            }
+        },
+        computed: {
+            isEnd() {
+                return this.status == "end"
             }
         }
     }
@@ -56,6 +65,21 @@
         line-height: 12px;
         color: #ffffff;
     }
-
-
+    .activity-end-footer {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.7;
+        border-radius: 4px;
+        background-color: #000000;
+    }
+    .activity-end-picture {
+        width: 77px;
+        height: 65px;
+        position: absolute;
+        top: 13px;
+        right: 11px;
+    }
 </style>

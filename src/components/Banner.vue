@@ -1,16 +1,16 @@
 <template>
     <swiper :options="swiperOption">
         <swiper-slide>
-            <swiper-content img-src="1.jpg" content="截止日期2018.07.02"></swiper-content>
+            <swiper-content img-src="1.jpg" content="截止日期2018.07.02" status="end"></swiper-content>
         </swiper-slide>
         <swiper-slide>
-            <swiper-content img-src="2.jpg" content="截止日期2018.07.02"></swiper-content>
+            <swiper-content img-src="2.jpg" content="截止日期2018.07.02" status="process"></swiper-content>
         </swiper-slide>
         <swiper-slide>
-            <swiper-content img-src="3.jpg" content="截止日期2018.07.02"></swiper-content>
+            <swiper-content img-src="3.jpg" content="截止日期2018.07.02" status="end"></swiper-content>
         </swiper-slide>
         <swiper-slide>
-            <swiper-content img-src="4.jpg" content="截止日期2018.07.02"></swiper-content>
+            <swiper-content img-src="4.jpg" content="截止日期2018.07.02" status="end"></swiper-content>
         </swiper-slide>
 
     </swiper>
