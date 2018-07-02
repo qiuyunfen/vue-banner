@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img :src="imgSrc"/>
+        <img :src= "require('../imgs/'+imgSrc)" />
         <div>
             <p>{{content}}</p>
         </div>
