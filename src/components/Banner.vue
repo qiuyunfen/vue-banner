@@ -7,16 +7,9 @@
 <!--status：活动是否已经结束（"end"）;-->
 <!--class: 在swiper情况下，必须为swiper-slide-->
 <template>
-
     <swiper :options="swiperOption">
-        <swiper-slide>
-            <activity-item :img-src="require('../imgs/1.jpg')" content="截止日期2018.07.02"  status="processing" class="swiper-slide"/>
-        </swiper-slide>
-        <swiper-slide>
-            <activity-item :img-src="require('../imgs/2.jpg')" content="截止日期2018.07.02" status="processing"  class="swiper-slide"/>
-        </swiper-slide>
-        <swiper-slide>
-            <activity-item :img-src="require('../imgs/3.jpg')" content="截止日期2018.07.02" status="end" class="swiper-slide"/>
+        <swiper-slide v-for="item in activityList" :key="item.id">
+            <activity-item :img-src="item.img" :content="item.content"  :status="item.status" class="swiper-slide"/>
         </swiper-slide>
     </swiper>
 </template>
@@ -34,6 +27,12 @@ export default {
         swiper,
         swiperSlide
     },
+    props: {
+        activityList: {
+            type: Array,
+            required: true
+        }
+    },
     data() {
         return {
             swiperOption: {
@@ -47,6 +46,11 @@ export default {
                 spaceBetween: 10, // spaceBetween: 两个slides的间隔
                 loop : true // loop: 是不是无限循环播放
             }
+        }
+    },
+    methods: {
+        getImg (img){
+            return require(img)
         }
     }
 }

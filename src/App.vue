@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <Banner/>
+    <activity-list/>
   </div>
 </template>
 
 <script>
-import Banner from './components/Banner.vue'
+import ActivityList from './app/ActivityList.vue'
 
 export default {
   name: 'app',
   components: {
-    Banner
+    ActivityList
   }
 }
 </script>
