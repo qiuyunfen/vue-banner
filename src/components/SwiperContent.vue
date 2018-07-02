@@ -1,6 +1,6 @@
 <template>
     <div class="activuty-box">
-        <img :src="require('../imgs/'+imgSrc)" class="activity-img"/>
+        <img :src=imgSrc class="activity-img"/>
         <div v-if="isEnd" class="activity-end-footer">
             <img src="../imgs/page-1@2x.png" class="activity-end-picture"/>
         </div>
@@ -23,7 +23,8 @@
             },
             status: {
                 type: String,
-                required: true
+                required: true,
+                default:"processing"
             }
         },
         computed: {
