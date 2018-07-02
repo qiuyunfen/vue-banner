@@ -11,7 +11,7 @@
 </template>
 <script>
     export default {
-        name: 'SwiperContent',
+        name: 'ActivityItem',
         props: {
             imgSrc: {
                 type: String,
@@ -29,7 +29,7 @@
         },
         computed: {
             isEnd() {
-                return this.status == "end"
+                return this.status === "end"
             }
         }
     }
