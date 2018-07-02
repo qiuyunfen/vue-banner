@@ -35,7 +35,8 @@ export default {
                 autoplay: {
                     delay: 2500,
                     disableOnInteraction: false
-                }
+                },
+                loop : true
             }
         }
     }
