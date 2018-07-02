@@ -1,6 +1,5 @@
 <template>
-
-    <div class="activuty-box swiper-slide">
+    <div class="activuty-box">
         <img :src="require('../imgs/'+imgSrc)" class="activity-img"/>
         <div v-if="isEnd" class="activity-end-footer">
             <img src="../imgs/page-1@2x.png" class="activity-end-picture"/>
@@ -8,7 +7,6 @@
         <div class="activity-footer" v-else>
             <p class="end-time-box">{{content}}</p>
         </div>
-
     </div>
 </template>
 <script>
@@ -40,9 +38,8 @@
 .activuty-box {
     position: relative;
     width: 345px;
-    height: 88px;
+    max-height: 88px;
     border-radius: 4px;
-    background-color: #d8d8d8;
 }
 .activity-img {
     width:100%;
@@ -50,7 +47,7 @@
 }
 .activity-footer {
     position: absolute;
-    bottom: 0;
+    bottom: 3px;
     right: 0;
     width: 246px;
     height: 18px;
