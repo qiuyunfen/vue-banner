@@ -24,7 +24,7 @@
             status: {
                 type: String,
                 required: true,
-                default:"processing"
+                default: "processing"
             }
         },
         computed: {
@@ -36,26 +36,29 @@
 </script>
 
 <style>
-.activuty-box {
-    position: relative;
-    width: 345px;
-    max-height: 88px;
-    border-radius: 4px;
-}
-.activity-img {
-    display: block;
-    width:100%;
-    height: 100%;
-}
-.activity-footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 246px;
-    height: 18px;
-    border-radius: 5px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));;
-}
+    .activuty-box {
+        position: relative;
+        width: 345px;
+        max-height: 88px;
+        border-radius: 4px;
+    }
+
+    .activity-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .activity-footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 246px;
+        height: 18px;
+        border-radius: 5px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));;
+    }
+
     .end-time-box {
         margin: 0;
         padding: 3px 11px 3px 0;
@@ -65,6 +68,7 @@
         color: #ffffff;
         letter-spacing: normal;
     }
+
     .activity-end-footer {
         width: 100%;
         height: 100%;
@@ -75,6 +79,7 @@
         border-radius: 4px;
         background-color: #000000;
     }
+
     .activity-end-picture {
         width: 77px;
         height: 65px;

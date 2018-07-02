@@ -1,8 +1,14 @@
+<!--@TODO:-->
+<!--1.再抽取一层swiper-content为activityItem-->
+<!--2.进一步抽象：外面传入一个object然后渲染出来，而不需要自己做循环-->
+<!--3.迁移到项目中-->
+
 <!--img-src：图片的地址，必须需要require；-->
 <!--content：这是在swiper的底下的字的信息-->
 <!--status：活动是否已经结束（"end"）;-->
 <!--class: 在swiper情况下，必须为swiper-slide-->
 <template>
+
     <swiper :options="swiperOption">
         <swiper-slide>
             <swiper-content :img-src="require('../imgs/1.jpg')" content="截止日期2018.07.02"  status="processing" class="swiper-slide"></swiper-content>
@@ -10,7 +16,7 @@
         <swiper-slide>
             <swiper-content :img-src="require('../imgs/2.jpg')" content="截止日期2018.07.02" status="processing"  class="swiper-slide"></swiper-content>
         </swiper-slide>
-        <swiper-slide class="swiper-slide">
+        <swiper-slide>
             <swiper-content :img-src="require('../imgs/3.jpg')" content="截止日期2018.07.02" status="end" class="swiper-slide"></swiper-content>
         </swiper-slide>
     </swiper>
@@ -44,7 +50,7 @@ export default {
                     disableOnInteraction: false
                 },
                 slidesPerView: 1.09,
-                loopedSlides: 9999,
+                loopedSlides: 1,
                 spaceBetween: 10,
                 loop : true
             }
