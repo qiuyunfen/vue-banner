@@ -31,11 +31,13 @@ export default {
     data() {
         return {
             swiperOption: {
-                centeredSlides: false,
+                centeredSlides: true,
                 autoplay: {
                     delay: 2500,
                     disableOnInteraction: false
                 },
+                slidesPerView: 1.09,
+                spaceBetween: 10,
                 loop : true
             }
         }

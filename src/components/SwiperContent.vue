@@ -1,10 +1,14 @@
 <template>
 
-    <div class="activuty-box">
-        <img :src="require('../imgs/'+imgSrc)" class="activity-img"/>
+    <div class="activuty-box swiper-slide">
+        <a href="http://www.baidu.com">
+            <img :src="require('../imgs/'+imgSrc)" class="activity-img"/>
+        </a>
+
         <div class="activity-footer">
             <p class="end-time-box">{{content}}</p>
         </div>
+
     </div>
 </template>
 <script>
@@ -52,4 +56,6 @@
         line-height: 12px;
         color: #ffffff;
     }
+
+
 </style>
