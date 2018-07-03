@@ -9,7 +9,7 @@
 <template>
     <swiper :options="swiperOption">
         <swiper-slide v-for="item in activityList" :key="item.id">
-            <activity-item :img-src="item.img" :content="item.content"  :status="item.status" class="swiper-slide"/>
+            <activity-item :img-src="item.img" :content="item.content"  :status="item.status" class="swiper-slide" :id="item.id" @activity-click-event="activityClickEvent"/>
         </swiper-slide>
     </swiper>
 </template>
@@ -37,20 +37,21 @@ export default {
         return {
             swiperOption: {
                 centeredSlides: true,
-                autoplay: { // autoplay: 自动播放
-                    delay: 3000,
-                    disableOnInteraction: false //当设置为false时，用户操作之后autoplay不会被禁掉
-                },
+                // autoplay: { // autoplay: 自动播放
+                //     delay: 3000,
+                //     disableOnInteraction: false //当设置为false时，用户操作之后autoplay不会被禁掉
+                // },
                 slidesPerView: 1.09, // slidesPerView：一页显示多少的slides，设置分数就出现了两侧都有一点出来
-                loopedSlides: 20, // loopedSlides：设置20是为了让在slides尽头后面还有连续的slides
+                loopedSlides: 20, // loopedSlides：设置20是为了让在slides尽头后面还有连续的slides,这个dom最多是现有的总活动的数量的三倍，所以并不会影响到性能
                 spaceBetween: 10, // spaceBetween: 两个slides的间隔
                 loop : true // loop: 是不是无限循环播放
             }
         }
     },
     methods: {
-        getImg (img){
-            return require(img)
+        activityClickEvent(props) {
+            window.console.log("in the banner",props);
+            this.$emit("activity-click-event",props);
         }
     }
 }
