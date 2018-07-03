@@ -20,41 +20,14 @@
                 activityList: [
                     {
                         id: 1,
-                        img: require('./../imgs/test1.jpg'),
+                        img: require('./../imgs/1.jpg'),
                         content: '截止时间2018.07.02',
                         status: 'proccess',
                     }, {
                         id: 2,
-                        img: require('./../imgs/test2.jpg'),
-                        content: '截止时间2018.07.02',
-                        status: 'process',
-
-
-                    }, {
-                        id: 3,
-                        img: require('./../imgs/test3.jpg'),
-                        content: '截止时间2018.07.02',
-                        status: 'process',
-
-
-                    }, {
-                        id: 4,
-                        img: require('./../imgs/1.jpg'),
-                        content: '截止时间2018.07.02',
-                        status: 'process',
-
-                    }, {
-                        id: 5,
                         img: require('./../imgs/2.jpg'),
                         content: '截止时间2018.07.02',
-                        status: 'process',
-
-                    }, {
-                        id: 6,
-                        img: require('./../imgs/3.jpg'),
-                        content: '截止时间2018.07.02',
-                        status: 'process',
-
+                        status: 'end',
                     }
                 ]
             }

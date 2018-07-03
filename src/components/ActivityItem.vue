@@ -54,7 +54,6 @@
     .activuty-box {
         position: relative;
         width: 345px;
-        padding-right: 10px;
         max-height: 88px;
         border-radius: 4px;
     }
@@ -93,7 +92,6 @@
         height: 100%;
         position: absolute;
         top: 0;
-        left: 0;
         opacity: 0.7;
         border-radius: 4px;
         background-color: #000000;
