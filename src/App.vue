@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <activity-list/>
+    <ScrollTopDemo/>
   </div>
 </template>
 
 <script>
-import ActivityList from './app/ActivityList.vue'
+import ScrollTopDemo from './app/ScrollTopDemo.vue'
 
 export default {
   name: 'app',
   components: {
-    ActivityList
+    ScrollTopDemo
   }
 }
 </script>

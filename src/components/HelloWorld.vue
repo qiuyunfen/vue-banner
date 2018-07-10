@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>
+    <p @click="activityClickEvent">
       For guide and recipes on how to configure / customize this project,<br>
       check out the
       <a href="https://cli.vuejs.org" target="_blank">vue-cli documentation</a>.
@@ -26,6 +26,98 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <ul>
+      <li><a href="https://router.vuejs.org" target="_blank">vue-router</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
+      <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://router.vuejs.org" target="_blank">vue-router</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
+      <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://router.vuejs.org" target="_blank">vue-router</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
+      <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://router.vuejs.org" target="_blank">vue-router</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
+      <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://router.vuejs.org" target="_blank">vue-router</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
+      <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://router.vuejs.org" target="_blank">vue-router</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
+      <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" target="_blank">vue-router</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
+      <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" target="_blank">vue-router</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
+      <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" target="_blank">vue-router</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
+      <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" target="_blank">vue-router</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
+      <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" target="_blank">vue-router</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
+      <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" target="_blank">vue-router</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
+      <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" target="_blank">vue-router</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
+      <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+    </ul>
+    <div v-on:click.prevent="stopStop" style="width:100px; height:100px; background:red">stop</div>
   </div>
 </template>
 
@@ -34,6 +126,26 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data() {
+      return {
+        reqanimationreference: Function
+      }
+  },
+  methods: {
+    activityClickEvent() {
+       this.reqanimationreference = window.requestAnimationFrame(this.repeatOften);
+    },
+
+    repeatOften() {
+        window.screenTop = window.screenTop+ 10
+        window.scrollTo(0, window.screenTop)
+        window.console.log(window.screenTop)
+        this.reqanimationreference = window.requestAnimationFrame(this.repeatOften);
+    },
+    stopStop () {
+        cancelAnimationFrame(this.reqanimationreference)
+    }
   }
 }
 </script>
