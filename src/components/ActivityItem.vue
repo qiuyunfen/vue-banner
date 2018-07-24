@@ -9,8 +9,7 @@
             <p class="end-time-box">{{content}}</p>
         </div>
     </div>
-    <div v-on:click="stopStop" style="width:100px; height:100px">stop</div>
-    </div>
+  </div>
 </template>
 <script>
 export default {
@@ -49,35 +48,29 @@ export default {
        this.reqanimationreference = window.requestAnimationFrame(this.repeatOften);
     },
 
-    repeatOften() {
-        window.screenTop = window.screenTop+ 10
-        console.log(window.screenTop)
-        this.reqanimationreference = window.requestAnimationFrame(this.repeatOften);
-    },
-    stopStop () {
-        cancelAnimationFrame(this.reqanimationreference)
-    }
+    // repeatOften() {
+    //     window.screenTop = window.screenTop+ 10
+    //     console.log(window.screenTop)
+    //     this.reqanimationreference = window.requestAnimationFrame(this.repeatOften);
+    // },
+    // stopStop () {
+    //     cancelAnimationFrame(this.reqanimationreference)
+    // }
   }
 };
 </script>
 
 <style>
-.add-div {
-  width: 10px;
-  height: 10px;
-  background: orange;
-  float: left;
-}
+
 .activuty-box {
   position: relative;
-  width: 345px;
-  height: 1240px;
+  width: 100%;
+  height: 88px;
   border-radius: 4px;
 }
 
 .activity-img {
   /*display: block;*/
-  height: 1240px;
   background-position: center center;
   border-radius: 4px;
   background-size: 100% auto;

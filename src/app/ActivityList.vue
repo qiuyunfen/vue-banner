@@ -1,8 +1,8 @@
 <template>
     <Banner :activityList="activityList" @activity-click-event="activityClickEvent">
-        <template v-for="item in activityList" slot-scope="props" :slot="item.id">
+        <!-- <template v-for="item in activityList" slot-scope="props" :slot="item.id">
             <activity-item :key="item.id" :img-src="item.img" :content="item.content"  :status="item.status" :id="item.id" class="swiper-slide"></activity-item>
-        </template>
+        </template> -->
     </Banner>
 </template>
 <script>
@@ -28,15 +28,10 @@
                         img: require('./../imgs/1.jpg'),
                         content: '截止时间2018.07.02',
                         status: 'proccess',
-                    }, {
-                        id: 2,
-                        img: require('./../imgs/2.jpg'),
-                        content: '截止时间2018.07.02',
-                        status: 'end',
                     }
                 ]
             }
         }
-
     }
+    
 </script>
