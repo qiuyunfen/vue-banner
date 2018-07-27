@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <ActivityList/>
+    <pagination/>
   </div>
 </template>
 
 <script>
-import ActivityList from './app/ActivityList.vue'
+import pagination from './app/pagination.vue'
 
 export default {
   name: 'app',
   components: {
-    ActivityList
+    pagination
   }
 }
 </script>
