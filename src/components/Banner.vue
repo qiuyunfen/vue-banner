@@ -7,35 +7,39 @@
 <!--status：活动是否已经结束（"end"）;-->
 <!--class: 在swiper情况下，必须为swiper-slide-->
 <template>
-    <swiper :options="swiperOption">
+    <swiper :options="swiperOption" @click.native="doSomething()" ref="swiper">
         <!-- <template v-for="item in activityList">
             <slot :name="item.id"></slot>
         </template> -->
-        <swiper-slide v-for="item in activityList" :key="item.id">
-            <slot :name="item.id" class="swiper-slide"></slot>
-            <activity-item :img-src="item.img" :content="item.content"  :status="item.status" class="swiper-slide" :id="item.id" @activity-click-event="activityClickEvent"/>
-        </swiper-slide>
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <!-- <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+        <swiper-slide>Slide 4</swiper-slide>
+        <swiper-slide>Slide 5</swiper-slide>
+        <swiper-slide>Slide 6</swiper-slide>
+        <swiper-slide>Slide 7</swiper-slide>
+        <swiper-slide>Slide 8</swiper-slide>
+        <swiper-slide>Slide 9</swiper-slide>
+        <swiper-slide>Slide 10</swiper-slide> -->
     </swiper>
 </template>
 
 <script>
 import {swiper, swiperSlide} from 'vue-awesome-swiper'
-import ActivityItem from './ActivityItem'
 import 'swiper/dist/css/swiper.css'
 
 // 最底层封装的是vue-awesome-swiper,地址：https://github.com/surmon-china/vue-awesome-swiper
 export default {
     name: 'Banner',
     components: {
-        ActivityItem,
         swiper,
         swiperSlide
-    },
-    props: {
-        activityList: {
-            type: Array,
-            required: true
-        }
     },
     data() {
         return {
@@ -45,7 +49,7 @@ export default {
                     delay: 3000,
                     disableOnInteraction: false //当设置为false时，用户操作之后autoplay不会被禁掉
                 },
-                slidesPerView: this.activityList.length === 1 ? 1 : 1.08, // slidesPerView：一页显示多少的slides，设置分数就出现了两侧都有一点出来
+                slidesPerView: 1.08, // slidesPerView：一页显示多少的slides，设置分数就出现了两侧都有一点出来
                 loopedSlides: 20, // loopedSlides：设置20是为了让在slides尽头后面还有连续的slides,这个dom最多是现有的总活动的数量的三倍，所以并不会影响到性能
                 spaceBetween: 10, // spaceBetween: 两个slides的间隔
                 loop : true // loop: 是不是无限循环播放
@@ -53,9 +57,12 @@ export default {
         }
     },
     methods: {
-        activityClickEvent(props) {
-            window.console.log("in the banner",props);
-            this.$emit("activity-click-event",props);
+        doSomething() {
+            window.console.log(111)
+            window.console.log(this.$refs.swiper)
+            // window.console.log(this.$refs.swiper.swiper.activeIndex)
+            // window.console.log(this.$refs.swiper.swiper.realIndex)
+            // window.console.log(this.$refs.swiper.swiper)
         }
     }
 }

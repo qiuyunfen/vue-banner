@@ -1,5 +1,5 @@
 <template>
-    <Banner :activityList="activityList" @activity-click-event="activityClickEvent">
+    <Banner @click.native="doSomething()" ref="swipers">
         <!-- <template v-for="item in activityList" slot-scope="props" :slot="item.id">
             <activity-item :key="item.id" :img-src="item.img" :content="item.content"  :status="item.status" :id="item.id" class="swiper-slide"></activity-item>
         </template> -->
@@ -7,17 +7,16 @@
 </template>
 <script>
     import Banner from '../components/Banner.vue'
-    import ActivityItem from '../components/ActivityItem.vue'
 
     export default {
         name: 'ActivityList',
         components: {
-            Banner,
-            ActivityItem
+            Banner
         },
         methods: {
-            activityClickEvent(props) {
-                window.console.log("in the acivityList", props);
+            doSomething() {
+                window.console.log(this.$refs.swipers);
+                window.console.log(this.$refs.swipers.$refs.swiper.swiper.realIndex);
             }
         },
         data: function () {

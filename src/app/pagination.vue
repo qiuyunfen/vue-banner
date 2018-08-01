@@ -18,6 +18,8 @@
 <script>
 import {swiper, swiperSlide} from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
+import "babel-polyfill"
+
   export default {
       components: {
         swiper,
@@ -34,6 +36,15 @@ import 'swiper/dist/css/swiper.css'
             }
           }
         }
+      }
+    },
+    mounted() {
+      this.test()
+    },
+    methods: {
+      test() {
+        var a = '5'
+        a.padStart(3, '0')
       }
     }
   }
